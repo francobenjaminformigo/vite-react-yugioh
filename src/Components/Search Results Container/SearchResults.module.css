@@ -1,0 +1,174 @@
+.cardList {
+    width: 100%;
+    max-width: 900px;
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+.cardList div {
+    margin: 10px;
+}
+
+.cardList button {
+    padding: 11px;
+    border-radius: 20px;
+    bottom: 20px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 3px #999;
+    margin: 20px auto;
+}
+
+.cardList button:hover {
+    background-color: white;
+    color: black;
+}
+
+.cardList button:active {
+    transform: translateY(2px);
+    background-color: white;
+    color: black;
+    box-shadow: 0 1px #999;
+}
+
+@media (min-width: 768px) {
+  .cardList button {
+    padding: 12px 50px;
+  }
+}
+
+@media (min-width: 1560px){
+    .cardList {
+        max-width: 1300px
+    }
+}
+
+.card {
+    max-width: 160px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+@media (min-width: 1024px) {
+    .card {
+        max-width: 230px;
+    }
+}
+
+.pop_up_container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop_up_body {
+    background-image: url('/bg-2.jpg');
+    background-position-x: center;
+    height: 90%;
+    max-height: 520px;
+    overflow-y: auto;
+    max-width: 1000px;
+    background-color: rgb(206, 206, 206);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.pop_up_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.pop_up_img_container {
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop_up_img_container img {
+    max-width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 80%;
+}
+
+.pop_up_card_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: auto;
+    border: solid 1px rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 25px;
+    overflow-y: auto;
+    max-height: 200px;
+    max-width: 70%;
+}
+
+.pop_up_footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pop_up_footer button {
+    padding: 11px;
+    border-radius: 20px;
+    bottom: 20px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 3px #999;
+    margin: 20px auto;
+    width: 100px;
+}
+
+.pop_up_footer button:hover {
+    background-color: white;
+    color: black;
+}
+
+.pop_up_footer button:active {
+    transform: translateY(2px);
+    background-color: white;
+    color: black;
+    box-shadow: 0 1px #999;
+}
+
+@media (min-width: 1024px){
+    .pop_up_content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .pop_up_card_info {
+        max-width: 50%;
+        max-height: 700px;
+    }
+}

@@ -1,0 +1,26 @@
+.app_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    background-color: rgb(27, 27, 27);
+    box-shadow: #000 0px 3px 2px;
+    padding: 10px 0px;
+}
+
+
+.yugi_logo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+.logo_img {
+    margin-top: 10px;
+    width: 35vw;
+    max-width: 180px;
+    -webkit-filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.6));
+}
